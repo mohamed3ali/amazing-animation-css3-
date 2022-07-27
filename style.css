@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(#200016, #592f2f);
+  height: 100vh;
+  font-family: system-ui;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  position: fixed;
+  width: 90%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+header .logo {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+header ul li {
+  margin-right: 30px;
+}
+header ul li a {
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+header ul li a:hover,
+.active {
+  background: #fff;
+  color: #200016;
+}
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.main img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+#moon {
+  mix-blend-mode: screen;
+  transform: translateY(140px);
+}
+.nouvil {
+  color: white;
+  font-size: 5px;
+  text-transform: uppercase;
+  transform: translateY(-140px);
+}
+.content {
+  color: white;
+  padding: 30px;
+}
+.content h2 {
+  margin: 20px;
+  font-size: 30px;
+}
+.content p {
+  margin: 20px;
+}
+@media (max-width: 620px) {
+  header ul li {
+    font-size: 10px;
+    margin: 2px;
+  }
+  header .logo {
+    font-size: 10px;
+  }
+  .nouvil {
+    font-size: 10px;
+  }
+}
